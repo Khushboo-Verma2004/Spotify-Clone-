@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@300&family=EB+Garamond:wght@500&family=Lily+Script+One&family=Montserrat:wght@200&display=swap');
+body{
+    background-color: rgb(8, 1, 56);
+    margin:0;
+    padding:0;
+} 
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    background-color: black;
+    margin:0;
+    padding:0;
+
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    height:80 px;
+    align-items: center;
+    color: white;
+
+}
+img{
+    width:30px;
+    height:30px;
+    padding: 0 12px;
+    font-family: 'Montserrat';
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    padding: 0 12px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.Bottom{
+    position: sticky;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 14px;
+}
+.container{
+    min-height :72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Alegreya';
+    display: flex;
+    width:70%;
+    margin:23px auto;
+    border-radius:12px;
+    padding:20px;
+    background-image: url('mi.jpeg');
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+}
+#MyProgressBar{
+    width: 1000px;
+    text-align: center;
+    cursor:pointer;
+}
+h1{
+    font-family: 'Alegreya';
+}
+.songitem{
+    height:50px;
+    display:flex;
+    background-color: rgba(230, 220, 220, 0.648);
+    color:black;
+    margin:12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius :34px;;
+    display:flex;
+    width: 500px;
+    
+}
+.songitem img{
+    width: 50px;
+    height: 50px;
+    margin:0 23px;
+    border-radius: 34px;
+
+
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top:74px ;
+}
+.songinfo{
+    position:absolute;
+    left:10vw;
+    color: aliceblue;
+    font-family: 'Comfortaa';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=EB+Garamond:wght@500&family=Lily+Script+One&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@300&family=EB+Garamond:wght@500&family=Lily+Script+One&family=Montserrat:wght@200&display=swap');
+body{
+    background-color: rgb(8, 1, 56);
+    margin:0;
+    padding:0;
+} 
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    background-color: black;
+    margin:0;
+    padding:0;
+
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    height:80 px;
+    align-items: center;
+    color: white;
+
+}
+img{
+    width:30px;
+    height:30px;
+    padding: 0 12px;
+    font-family: 'Montserrat';
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    padding: 0 12px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.Bottom{
+    position: sticky;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    font-family: 'Alegreya';
+}
+.icons{
+    margin-top: 14px;
+}
+.container{
+    min-height :72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Alegreya';
+    display: flex;
+    width:70%;
+    margin:23px auto;
+    border-radius:12px;
+    padding:20px;
+    background-image: url('mi.jpeg');
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+}
+#MyProgressBar{
+    width: 1000px;
+    text-align: center;
+}
+h1{
+    font-family: 'Alegreya';
+}
+.songitem{
+    height:50px;
+    display:flex;
+    background-color: white;
+    color:black;
+    margin:12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius :34px;;
+    display:flex;
+    width: 500px;
+    
+}
+.songitem img{
+    width: 50px;
+    height: 50px;
+    margin:0 23px;
+    border-radius: 34px;
+
+
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top:74px ;
+}
+.songinfo{
+    position:absolute;
+    left:10vw;
+    color: aliceblue;
+    font-family: 'Comfortaa';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.songinfo img{
+    opacity:0;
+    transition:opacity 1s ease-in;
+    font-family: 'Alegreya';
+}
+}
+.songinfo img{
+    opacity:0;
+    transition:opacity 0.4s ease-in;
+    font-family: 'Alegreya';
+    display: flex;
+
+}
