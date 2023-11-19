@@ -1,18 +1,20 @@
 console.log("Welcome to Spotify"); 
 //Initialising variables
-let songIndex=0;
-let audioElement=new Audio('Spotify/Butterfly.mp3');
+// let songIndex=0;
+let index=0;
+let audioElement=new Audio('Songs/1.mp3');
 let MasterPlay=document.getElementById('MasterPlay');
 let MyProgressBar=document.getElementById('MyProgressBar');
 let gif=document.getElementById('gif');
+let masterSongName=document.getElementById('masterSongName');
 let songitems=Array.from(document.getElementsByClassName('songitem'));
-let songs=[
-    {songName:"Butterfly",filePath:"Spotify/1.mp3",coverPath:"1.png"},
-    {songName:"Other Side",filePath:"Spotify/2.mp3",coverPath:"2.jpeg"},
-    {songName:"Long Nights",filePath:"Spotify/3.mp3",coverPath:"3.png"},
-    {songName:"Under The Same Sky",filePath:"Spotify/4.mp3",coverPath:"4.png"},
-    {songName:"Flashback",filePath:"Spotify/5.mp3",coverPath:"5.png"},
-    {songName:"No S leep Till Tokyo",filePath:"Spotify/6.mp3",coverPath:"6.png"},
+let songs=[ 
+    {songName:"Butterfly",filePath:"Songs/1.mp3",coverPath:"Covers/1.png"},
+    {songName:"Other Side",filePath:"Songs/2.mp3",coverPath:"Covers/2.png"},
+    {songName:"Long Nights",filePath:"Songs/3.mp3",coverPath:"Covers/3.png"},
+    {songName:"Under The Same Sky",filePath:"Songs/4.mp3",coverPath:"Covers/4.png"},
+    {songName:"Flashback",filePath:"Songs/5.mp3",coverPath:"Covers/5.png"},
+    {songName:"No Sleep Till Tokyo",filePath:"Songs/6.mp3",coverPath:"Covers/6.png"},
 ]
 songitems.forEach((element, i) => { 
     console.log(element, i);
@@ -46,3 +48,55 @@ audioElement.addEventListener('timeupdate',()=>{
 MyProgressBar.addEventListener('change',()=>{
     audioElement.currentTime=MyProgressBar.value*audioElement.duration/100; 
 })
+const makeAllPlays = () => {
+    Array.from(document.getElementsByClassName('songitemplay')).forEach((element) => {
+        element.classList.remove('fa-circle-pause');
+        element.classList.add('fa-circle-play');
+    });
+};
+
+Array.from(document.getElementsByClassName('songitemplay')).forEach((element, index) => {
+    element.addEventListener('click', (e) => {
+        makeAllPlays();
+        
+        e.target.classList.remove('fa-circle-play');
+        e.target.classList.add('fa-circle-pause');
+        audioElement.src = songs[index].filePath;
+        masterSongName.innerText= songs[index].songName;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        gif.style.opacity=1;
+        MasterPlay.classList.remove('fa-play-circle');
+        MasterPlay.classList.add('fa-pause-circle');
+    });
+});
+document.getElementById('next').addEventListener('click', ()=>{
+    if(index>=5){
+        index = 0;
+    }
+    else{
+        index+=1;
+    }
+    audioElement.src = songs[index].filePath;
+    masterSongName.innerText= songs[index].songName;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        MasterPlay.classList.remove('fa-play-circle');
+        MasterPlay.classList.add('fa-pause-circle');
+}
+)
+document.getElementById('previous').addEventListener('click', ()=>{
+    if(index<=0){
+        index = 0;
+    }
+    else{
+        index-=1;
+    }
+    audioElement.src = songs[index].filePath;
+    masterSongName.innerText= songs[index].songName;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        MasterPlay.classList.remove('fa-play-circle');
+        MasterPlay.classList.add('fa-pause-circle');
+}
+)
